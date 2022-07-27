@@ -116,10 +116,15 @@ const actualizarCarrito = () => {
 }
 
 
-const boton = document.getElementById(`agregar${productos.id}`)
+const agregar = document.getElementById(`agregar${productos.id}`)
 
-/*
-boton.addEventListener("click", () =>{
+
+
+// Librerias
+
+const botonCarrito = document.getElementById("botonCarrito")
+
+botonCarrito.addEventListener("click", () =>{
     Swal.fire({
         title: 'Carrito',
         text: 'Productos agregados:',
@@ -143,4 +148,4 @@ productos.forEach(productos =>{
         }).showToast();
     })
 })
-*/
+
